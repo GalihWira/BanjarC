@@ -10,31 +10,31 @@ class HomeController extends Controller {
         
         $info = [
             [
-                "logo" => "/assets/py.png",
+                "logo" => "/assets/home/py.png",
                 "nama" => "Banjar Phyton",
                 "arah" => "Utara",
                 "rotasi" => ""
             ],
             [
-                "logo" => "/assets/js.png",
+                "logo" => "/assets/home/js.png",
                 "nama" => "Banjar Js",
                 "arah" => "Timur",
                 "rotasi" => "rotate-90"
             ],
             [
-                "logo" => "/assets/java.png",
+                "logo" => "/assets/home/java.png",
                 "nama" => "Banjar Java",
                 "arah" => "Timur",
                 "rotasi" => "rotate-90"
             ],
             [
-                "logo" => "/assets/go.png",
+                "logo" => "/assets/home/go.png",
                 "nama" => "Banjar Go",
                 "arah" => "Selatan",
                 "rotasi" => "rotate-180"
             ],
             [
-                "logo" => "/assets/php.png",
+                "logo" => "/assets/home/php.png",
                 "nama" => "Banjar PHP",
                 "arah" => "Barat",
                 "rotasi" => "rotate-270"
@@ -134,5 +134,10 @@ class HomeController extends Controller {
     public function home()
     {
         return view('home');
+    }
+
+    public function valpengajuan()
+    {
+        return view('valpengajuan');
     }
 }

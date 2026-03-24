@@ -1,20 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Belgrano&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Sora:wght@100..800&display=swap" rel="stylesheet">
-    @vite(['resources/css/app.css'])
-    <title>Document</title>
-</head>
-<body>
+@extends('layouts.navbar')
+
+@section('title', 'Home')
+
+@section('home')
     <main class ="font-sora">
     <!--Banner Banjar-->
     <section class="relative h-screen w-full flex items-center justify-between">
-        <img src="/assets/Cgradasi.jpg" class="h-screen w-screen object-cover absolute">
+        <img src="/assets/home/Cgradasi.jpg" class="h-screen w-screen object-cover absolute -mt-[90px]">
         <div class="relative bg-white rounded-[26.25px] w-[535.5px] h-[313.50px] py-[23.25px] px-[32.5px] ml-[81.75px]">
             <h1 class ="font-bold text-[37.5px] mb-2xl text-second-50">Wellcome</h1>
             <p class ="text-[22.5px] font-normal text-justify">Selamat datang di website resmi Banjar C. Yuk eksplor lebih lanjut lagi mengenai Banjar C, Kabupaten  Extension, Provinsi VsCode</p>
@@ -54,8 +46,7 @@
             <div class ="mr-[60px]">
                 <h1 class ="font-bold text-primary-200 text-[45px] mb-[14.25px]">Informasi Umum Banjar C</h1>
                 <p class="text-[22.5px] mb-[12.5px] text-justify">Banjar C terletak di tengah Desa Compiler, Kecamatan Root, Kabupaten Extension, Provinsi VS Code. Saat ini Banjar C dihuni oleh 1523 warga yang terbagi ke dalam 256 kepala keluarga. Secara geografis banjar ini memiliki posisi strategis dengan batas wilayah sebagai berikut:</p>
-
-                <div class ="w-[641px] h-[246px] rounded-[22px] bg-primary-50 drop-shadow-[7.37px_7.37px_2.95px_rgba(0,0,0,0.50)] py-[15px] px-[59px]">
+                <div class ="w-[641px] h-[246px] rounded-[22px] bg-primary-50 drop-shadow-[3px_4px_3px_rgba(0,0,0,0.25)] py-[15px] px-[59px]">
                     
                     <div class ="grid grid-cols-5 gap-[11px]">
                     @foreach ($info as $infoc)
@@ -74,7 +65,7 @@
                 </div>
                 </div>
             </div>
-            <img src ="/assets/home2.png">
+            <img src ="/assets/home/home2.png">
         </div>
     </section>
 
@@ -82,12 +73,12 @@
     <section class="bg-primary-300 w-full py-[71.25px] pr-[101.75px] pl-[105.75px]">
         <div class="flex items-center gap-[80px]">  
             <div class="flex items-center">
-                <img src="/assets/sejarah1.png">
+                <img src="/assets/home/sejarah1.png">
                 <div class="ml-[11px]">
                     <div class="bg-white w-[305px] h-[221px] mb-[10px] flex flex-col justify-center items-center rounded-l-[100px] rounded-tr-[100px] px-[29px] py-[23px]">
                         <h1 class="text-primary-300 font-bold text-center text-[35px] leading-tight">Sejarah Singkat Mengenai Banjar C</h1>
                     </div>
-                    <img src="/assets/sejarah2.png">
+                    <img src="/assets/home/sejarah2.png">
                 </div>
             </div>
 
@@ -99,8 +90,7 @@
     </section>
 
     <!--Ini visi misi-->
-    <section class ="bg-white w-full py-[71.25px] pr-[101.75px] pl-[105.75px]">
-        <div class ="flex justify-between items-center">
+    <section class ="bg-white w-full py-[71.25px] pr-[101.75px] pl-[105.75px] flex justify-between items-center gap-5">
             <div>
                 <div class ="w-[512px] h-[218px] px-[55px] bg-primary-50 flex justify-center items-center rounded-tl-[22px] drop-shadow-[0px_6.432px_4.288px_rgba(0,0,0,0.25)] mb-[17.15px]">
                     <h1 class ="font-bold text-[43px] text-primary-200 text-center">“Fondasi Kuat, Warga Berdaulat”</h1>
@@ -116,8 +106,7 @@
                 <p class ="text-[24px] text-justify">2. Mengoptimalkan potensi setiap warga dan memberdayakan UMKM untuk kemajuan ekonomi bersama.</p>
                 <p class ="text-[24px] text-justify">3. Menjaga nilai budaya luhur sebagai fondasi dalam menghadapi modernisasi.</p>
             </div>
-            <img src ="/assets/vm.png">
-        </div>
+            <img src ="/assets/home/vm.png">
     </section>
 
     <!--Ini data-->
@@ -140,9 +129,13 @@
                 <p class ="text-[20.5px] text-justify">Perjalanan Banjar C dari hamparan tanah kosong pada tahun 1972 hingga menjadi lingkungan yang penuh inovasi saat ini adalah bukti nyata dari semangat gotong royong yang tak pernah padam. Di tengah arus digitalisasi yang masif di Provinsi VS Code, kami tetap teguh memegang akar budaya warisan leluhur.</p>
                 <p class ="text-[20.5px] text-justify">Setiap langkah, program, dan inovasi yang kami rancang selalu bermuara pada satu tujuan: memastikan setiap warga Banjar C dapat berdiri di atas fondasi yang kuat, mandiri secara ekonomi, dan berdaulat di tanahnya sendiri.</p>
             </div>
-            <img src ="/assets/catatan.png">
+            <img src ="/assets/home/catatan.png">
         </div>
     </section>
 </main>
-</body>
-</html>
+
+@endsection
+
+@section('footer')
+    @include('layouts.footer')
+@endsection
