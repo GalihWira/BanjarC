@@ -10,8 +10,8 @@
     @vite(['resources/css/app.css'])
     <title>Document</title>
 </head>
-<body class="bg-primary-50 font-sora">
-    <main class="flex justify-center items-center min-w-fit px-[29.5px]">
+<body class="font-sora">
+    <main class="bg-primary-50 flex justify-center items-center min-w-fit px-[29.5px]">
         <section class=" w-[1381px] h-[697px] bg-white shadow-[3.971px_3.971px_9.928px_0_rgba(0,0,0,0.25)] flex flex-col items-center px-[179px] my-[31px]">
             <h1 class="text-[65px] text-primary-200 font-bold mt-[72px] text-center">Daftar Tagihan</h1>
             <div class="flex flex-row items-center justify-between gap-[32.16px]">

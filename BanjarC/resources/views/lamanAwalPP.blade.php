@@ -10,9 +10,9 @@
     @vite(['resources/css/app.css'])
     <title>Document</title>
 </head>
-<body class="bg-primary-50">
-    <main class="flex items-center pb-[56px] px-20">
-        <section class="w-[1282px] h-[641px] bg-white font-sora rounded-[14px] drop-shadow-[7px_8px_4.1px_rgba(0,0,0,0.5)] flex flex-col items-center pt-[39px] -mt-2">
+<body class="font-sora">
+    <main class="bg-primary-50 flex items-center justify-center pb-[56px] px-20 overflow-auto">
+        <section class="w-[1282px] h-[641px] mt-[72px] bg-white rounded-[14px] drop-shadow-[7px_8px_4.1px_rgba(0,0,0,0.5)] flex flex-col items-center pt-[39px] -mt-2">
             <h1 class="text-[64px] font-bold text-primary-200 px-12 mb-[21px]">Pengaduan & Peminjaman</h1>
             <div class="rounded-t-[13px] w-280 h-15 bg-second-50 border border-black">
                 <h2 class="px-21 text-white font-bold text-[24px] pt-2.5 pl-6.5 ">Layanan Pengaduan</h2>
