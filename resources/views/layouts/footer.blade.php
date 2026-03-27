@@ -1,7 +1,3 @@
-@extends('home')
-
-@section('footer')
-    
     <footer class ="w-full h-[355px] bg-footer-100 py-[46px] font-sora">
         <div class ="flex justify-between items-start mb-[43px] mx-[74px]">
             <div class ="text-white flex flex-col">
@@ -69,13 +65,11 @@
                 <a href ="" class ="text-light text-[17px]">Email: banjaradatc@gmail.com</a>
             </div>
         </div>
-        <svg width="1591" height="3" viewBox="0 0 1591 3" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0.000294775 0.552934L1590.64 1.47875" stroke="white" stroke-opacity="0.12" stroke-width="1.10599"/>
+        <svg class="w-full" viewBox="0 0 1443 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <line x1="0" y1="0.5" x2="1443" y2="0.5" stroke="white" stroke-opacity="0.2"/>
         </svg>
         <div class ="flex justify-between items-center mt-[26px] mx-[74px]">
             <h1 class ="font-semibold text-[17px] text-footer-50">&copy; 2026 Banjar Adat C</h1>
             <h1 class ="font-semibold text-[17px] text-footer-50">Tim Pelayanan Informasi Banjar C</h1>
         </div>
     </footer>
-
-@endsection

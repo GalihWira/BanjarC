@@ -1,13 +1,13 @@
 @extends('layouts.sidbarUser')
 
-@section('title', 'Validasi Pengajuan')
+@section('title', 'Validasi Pengaduan')
 
-@section('validasiPengajuan')
+@section('validasiPengaduan')
 
 <body class ="font-sora bg-primary-50 px-[140px] pt-[34px] flex justify-center">
     <main>
         <section class ="flex items-center gap-4">
-            <h1 class ="font-bold text-[40px] text-primary-300 drop-shadow-[1px_1px_1px_rgba(0,0,0,100)]">Validasi Pengajuan</h1>
+            <h1 class ="font-bold text-[40px] text-primary-300 drop-shadow-[1px_1px_1px_rgba(0,0,0,100)]">Validasi Pengaduan</h1>
             <div class ="bg-white ring-inset ring-2 ring-primary-300 w-[688px] h-11 rounded-[10px] flex items-center">
                     <p class ="text-search-50 text-[18px] ml-2">Ketik disini...</p>
             </div>
@@ -28,10 +28,10 @@
                     <h1 class ="font-semibold text-[21px] text-white">Nama</h1>
                 </div>
                 <div class ="w-[270px] h-[43px] border-r-2 border-white flex justify-center items-center">
-                    <h1 class ="font-semibold text-[21px] text-white">Peminjaman</h1>
+                    <h1 class ="font-semibold text-[21px] text-white">Kategori</h1>
                 </div>
                 <div class ="w-[316px] h-[43px] border-r-2 border-white flex justify-center items-center">
-                    <h1 class ="font-semibold text-[21px] text-white">Tanggal Pengajuan</h1>
+                    <h1 class ="font-semibold text-[21px] text-white">Subjek Pengaduan</h1>
                 </div>
                 <div class ="w-[210px] h-[43px] flex justify-center items-center">
                     <h1 class ="font-semibold text-[21px] text-white">Status</h1>
@@ -39,19 +39,19 @@
             </div>
 
             <div class ="grid-cols-5 ml-[5px] mt-2">
-                @foreach ($pengajuan as $pengajuanc)
+                @foreach ($pengaduan as $pengaduanc)
                 <div class ="w-[1150px] h-fit flex items-center mb-2">
                 <div class ="w-[73.77px] h-[43px] flex justify-center items-center">
-                    <h1 class ="text-[17px] text-black">{{$pengajuanc['nomor']}}</h1>
+                    <h1 class ="text-[17px] text-black">{{$pengaduanc['nomor']}}</h1>
                 </div>
                 <div class ="w-[286px] h-fit flex justify-left items-center">
-                    <h1 class ="text-[17px] text-black px-2">{{$pengajuanc['nama']}}</h1>
+                    <h1 class ="text-[17px] text-black px-2">{{$pengaduanc['nama']}}</h1>
                 </div>
                 <div class ="w-[270px] h-[43px] flex justify-left items-center">
-                    <h1 class ="text-[17px] text-black px-2">{{$pengajuanc['pinjam']}}</h1>
+                    <h1 class ="text-[17px] text-black px-2">{{$pengaduanc['adu']}}</h1>
                 </div>
                 <div class ="w-[316px] h-[43px] flex justify-left items-center">
-                    <h1 class ="text-[17px] text-black px-2">{{$pengajuanc['tanggal']}}</h1>
+                    <h1 class ="text-[17px] text-black px-2">{{$pengaduanc['subjek']}}</h1>
                 </div>
                 <div class ="w-[210px] h-[43px] flex justify-center items-center gap-[17px]">
                     <svg width="30" height="30" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -93,4 +93,5 @@
         </section>
     </main>
 </body>
-</html>
+
+@endsection
