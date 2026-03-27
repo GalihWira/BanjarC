@@ -160,6 +160,6 @@ class ValidasiController extends Controller
 
     public function valpembayaran()
     {
-        return view('valpembdataayaran');
+        return view('valpembayaran');
     }
 }
