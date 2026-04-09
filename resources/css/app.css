@@ -28,4 +28,8 @@
 
 header.scrolled {
     @apply shadow-lg;
+    --font-sans: "Sora", sans-serif;
+    --color-primary: #1565C0;
+    --color-banjar-orange: #FFAB1F;
+    --color-banjar-dark: #004481;
 }
