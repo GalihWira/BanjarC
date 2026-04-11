@@ -36,3 +36,6 @@ Route::get ('/lamanpengajuan', function () {
     return view ('lamanPengajuan
     ');
 });
+
+Route::get('/peminjaman', [PeminjamanController::class, 'index'])->name('peminjaman.index');
+Route::get('/kontrol-peminjaman', [PeminjamanController::class, 'kontrol'])->name('peminjaman.kontrol');
