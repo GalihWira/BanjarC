@@ -14,8 +14,6 @@ Route::get ('/validasi/pengaduan', [ValidasiController::class, 'pengaduan']);
 Route::get ('/validasi/pengajuan', [ValidasiController::class, 'pengajuan']);
 Route::get ('/validasi/pembayaran', [ValidasiController::class, 'pembayaran']);
 
-
-Route::get ('/', [HomeController::class, 'home']);
 Route::get ('/bayarpeturunan', function () {
     return view ('bayarpeturunan
     ');
