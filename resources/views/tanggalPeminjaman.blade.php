@@ -8,7 +8,7 @@
     @vite(['resources/css/app.css'])
 </head>
 <body class="bg-white min-h-screen">
-    <div class="bg-[#FCA311] py-5 flex justify-center items-center shadow-sm">
+    <div class="bg-second-50 py-5 flex justify-center items-center shadow-sm">
         <h1 class="text-white text-[28px] font-extrabold tracking-wide uppercase underline decoration-white decoration-[3px] underline-offset-8">
             Kontrol Tanggal Peminjaman
         </h1>
@@ -88,7 +88,7 @@
                         </div>
                     </div>
                 </div>
-                <button class="w-full bg-[#FCA311] text-white font-bold text-base py-2.5 rounded hover:bg-orange-500 transition-colors mt-2">
+                <button class="w-full bg-second-50 text-white font-bold text-base py-2.5 rounded hover:bg-orange-500 transition-colors mt-2">
                     Simpan Perubahan
                 </button>
             </div>

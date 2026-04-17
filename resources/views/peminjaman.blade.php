@@ -8,7 +8,7 @@
 </head>
 <body class="bg-[#E3F2FD] p-10 flex justify-center items-center min-h-screen">
     <div class="bg-white border-10 border-white shadow-lg w-full max-w-5xl">
-        <div class="bg-[#FCA311] text-center py-5">
+        <div class="bg-second-50 text-center py-5">
             <h1 class="text-white text-3xl font-bold tracking-wide">Ketersediaan Balai Banjar C</h1>
         </div>
         <div class="flex flex-col md:flex-row p-10 gap-12 justify-center">
@@ -72,7 +72,7 @@
                         Tidak Ada informasi
                     </div>
                 </div>
-                <button class="w-full bg-[#FCA311] text-white font-bold text-lg py-3 rounded hover:bg-orange-500 transition-colors mt-auto">
+                <button class="w-full bg-second-50 text-white font-bold text-lg py-3 rounded hover:bg-orange-500 transition-colors mt-auto">
                     Ajukan Peminjaman
                 </button>
             </div>
