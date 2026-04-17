@@ -13,6 +13,20 @@
     --color-primary-50 : #E3F2FD;
     --color-primary-100 : #64B5F6;
     --color-primary-200 : #1E88E5;
+    --color-primary-250: #1565C0;
     --color-primary-300 : #004481;
+    --color-input-50 : #D9D9D9
+    --font-paytone : "Paytone One". serif;
+    --color-second-50 : #FFAB1F;
+    --color-logo-400 : #00599D;
+    --color-search-50 : #DEDADA;
+    --color-footer-50 : #858585;
+    --color-footer-100 : #272727; 
+}
 
+header.scrolled {
+    @apply shadow-lg;
+    --font-sans: "Sora", sans-serif;
+    --color-primary: #1565C0;
+    --color-banjar-orange: #FFAB1F;
 }
