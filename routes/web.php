@@ -10,9 +10,9 @@ Route::get ('/', [HomeController::class, 'index']);
 
 Route::get ('/login', [AuthController::class, 'login']);
 
-Route::get ('/validasi/pengaduan', [ValidasiController::class, 'pengaduan']);
-Route::get ('/validasi/pengajuan', [ValidasiController::class, 'pengajuan']);
-Route::get ('/validasi/pembayaran', [ValidasiController::class, 'pembayaran']);
+Route::get ('/validasi/pengaduan-val', [ValidasiController::class, 'pengaduan']);
+Route::get ('/validasi/pengajuan-val', [ValidasiController::class, 'pengajuan']);
+Route::get ('/validasi/pembayaran-val', [ValidasiController::class, 'pembayaran']);
 
 Route::get('/PlaceToGo', function () {
     return view('PlaceToGo');
@@ -62,5 +62,5 @@ Route::get ('/lamanpengajuan', function () {
     return view ('lamanPengajuan');
 })->name('pengajuan');
 
-Route::get('/peminjaman', [PeminjamanController::class, 'index'])->name('peminjaman.index');
+Route::get('/peminjaman-ad', [PeminjamanController::class, 'index'])->name('peminjaman.index');
 Route::get('/kontrol-peminjaman', [PeminjamanController::class, 'kontrol'])->name('peminjaman.kontrol');
