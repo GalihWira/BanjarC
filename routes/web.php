@@ -6,35 +6,6 @@ use App\Http\Controllers\AuthController;
 use App\Http\Controllers\ValidasiController;
 use App\Http\Controllers\PeminjamanController;
 
-<<<<<<< HEAD
-Route::get ('/', [HomeController::class, 'home']);
-Route::get ('/lamanAwalPP', function() {
-    return view ('lamanAwalPP');
-});
-Route::get ('/daftarTagihan', function() {
-    return view ('daftarTagihan');
-});
-Route::get ('/localProduct', function() {
-    return view ('localProduct');
-});
-Route::get ('/adminPlacetoGo', function() {
-    return view ('adminPlacetoGo');
-});
-Route::get ('/adminLocalProduct', function() {
-    return view ('adminLocalProduct');
-});
-Route::get ('/lamanPengumuman', function() {
-    return view ('lamanPengumuman');
-});
-Route::get ('/dataPembayaranAir', function() {
-    return view ('dataPembayaranAir');
-});
-Route::get ('/dataPembayaranPeturunan', function() {
-    return view ('dataPembayaranPeturunan');
-});
-Route::get ('/dataPembayaranSukaDuka', function() {
-    return view ('dataPembayaranSukaDuka');
-=======
 Route::get ('/', [HomeController::class, 'index']);
 
 Route::get ('/login', [AuthController::class, 'login']);
@@ -48,7 +19,6 @@ Route::get ('/', [HomeController::class, 'home']);
 Route::get ('/bayarpeturunan', function () {
     return view ('bayarpeturunan
     ');
->>>>>>> b32ff0ff26bd50f8fdc8dfc2889514b75224d3cb
 });
 Route::get ('/bayarair', function () {
     return view ('bayarAir
