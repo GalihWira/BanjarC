@@ -240,7 +240,7 @@
 
                 <div class="flex items-center justify-end font-semibold mt-[20px]">
                     <button class="">
-                        <a href="" class="text-black bg-second-50 rounded-[10px] w-[115px] h-[37.35px] flex items-center justify-center shadow-[0px_3px_3px_rgba(0,0,0,0.25)]">Submit</a>
+                        <a href="{{ route('awalpp') }}" class="text-black bg-second-50 rounded-[10px] w-[115px] h-[37.35px] flex items-center justify-center shadow-[0px_3px_3px_rgba(0,0,0,0.25)]">Submit</a>
                     </button>
                 </div>
 

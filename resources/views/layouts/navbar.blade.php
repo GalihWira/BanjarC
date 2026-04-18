@@ -11,15 +11,15 @@
     <title>Banjar C || @yield('title')</title>
 </head>
 <body>
-    <header class ="bg-white w-full h-[90px] rounded-b-[50px] flex justify-between items-center gap-[200px] px-[103px] py-3 drop-shadow-[0px_4px_4px_rgba(0,0,0,0.25)] sticky top-0 z-50 relative">
+    <header class ="nav-bar bg-white w-full h-[90px] rounded-b-[50px] flex justify-between items-center gap-[200px] px-[103px] py-3 drop-shadow-[0px_4px_4px_rgba(0,0,0,0.25)] sticky top-0 z-50 relative">
         <div class ="flex items-center gap-2 justify-center">
             <h1 class ="font-paytone font-bold text-[33px] text-logo-400">Banjar</h1>
             <img src ="/assets/login/logoC.png" class ="w-[36px] h-[36px]">
         </div>
         <nav class ="font-sora font-bold text-2xl text-primary-400 flex justify-between items-center">
-            <a href ="#" class ="w-[120px] flex justify-center items-center hover:h-[90px] hover:bg-primary-200 hover:text-white">Home</a>
-            <a href ="#"  class ="w-[204px] flex justify-center items-center hover:h-[90px] hover:bg-primary-200 hover:text-white" >Place To Go</a>
-            <a href ="#" class ="w-[212px] flex justify-center items-center hover:h-[90px] hover:bg-primary-200 hover:text-white" >Local Product</a>
+            <a href ="{{ route('hom') }}" class ="w-[120px] flex justify-center items-center hover:h-[90px] hover:bg-primary-200 hover:text-white">Home</a>
+            <a href ="{{ route('placetogo') }}"  class ="bar-wisata w-[204px] flex justify-center items-center hover:h-[90px] hover:bg-primary-200 hover:text-white" >Place To Go</a>
+            <a href ="{{ route('lokalproduk') }}" class ="w-[212px] flex justify-center items-center hover:h-[90px] hover:bg-primary-200 hover:text-white" >Local Product</a>
         </nav>
         <div>
             <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -33,10 +33,13 @@
                 </clipPath>
                 </defs>
             </svg>
-            <a href ="/login" class ="font-sora font-bold text-[15px] text-primary-400 mt-0">Login</a>
+            <a href ="{{ route('login') }}"" class ="font-sora font-bold text-[15px] text-primary-400 mt-0">Login</a>
         </div>
     </header>
 
     @yield('home')
+    @yield('login')
+    @yield('place')
+    @yield('lokal')
 </body>
 </html>

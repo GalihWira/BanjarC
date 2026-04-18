@@ -1,24 +1,17 @@
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Belgrano&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100..800&display=swap" rel="stylesheet">
-        <title>Banjar Place To Go</title>
-        @vite(['resources/css/app.css'])
-    </head>
+@extends('layouts.navbar')
+
+@section('title', 'Home')
+
+@section('place')
     <body>
-        <main class="w-full font-sans bg-gray-100">
+        <main class="w-full  font-sora bg-primary-50 mt-0 ">
             <section class="relative w-full h-150 flex flex-col items-center justify-center px-4 overflow-hidden">
                 <div class="absolute inset-0 z-0">
                     <img class="w-full h-full object-cover" src="{{asset('assets/Banner.jpeg')}}" alt="">
                     <div class="absolute inset-0 bg-black/50"></div>
                 </div>
                 <div class="relative z-10 text-center w-full max-w-4xl flex flex-col items-center mt-15">
-                    <h1 class="text-5xl md:text-7xl font-extrabold text-banjar-orange mb-3 tracking tracking-wide">
+                    <h1 class="text-5xl md:text-7xl font-extrabold  text-second-50 mb-3 tracking tracking-wide">
                         Banjar C Places To Go
                     </h1>
                     <h2 class="text-2xl font-serif text-white mb-2">
@@ -52,7 +45,7 @@
                     </div>
                 </div>
             </section>
-            <nav class="w-full bg-primary">
+            <nav class="w-full bg-primary-300">
                 <ul class="flex flex-wrap justify-center items-center w-full max-w-6xl mx-auto text-lg font-bold">
                     <li>
                         <a class="block px-6 py-4 text-white" href="">Semua</a>
@@ -79,7 +72,7 @@
                     <x-culinary-card /> <x-culinary-card /> <x-culinary-card /> <x-culinary-card /> <x-culinary-card /> <x-culinary-card /> <x-culinary-card /> <x-culinary-card />
                 </div>
             </section>
-            <div class="w-full bg-primary py-4">
+            <div class="w-full bg-primary-200 py-4">
                 <div class="max-w-6xl mx-auto px-8">
                     <h2 class="text-white font-bold text-2xl md:text-3xl tracking-wide">History</h2>
                 </div>
@@ -90,7 +83,7 @@
                 </div>
             </section>
 
-            <div class="w-full bg-primary py-4">
+            <div class="w-full bg-primary-200 py-4">
                 <div class="max-w-6xl mx-auto px-8">
                     <h2 class="text-white font-bold text-2xl md:text-3xl tracking-wide">Culture</h2>
                 </div>
@@ -101,7 +94,7 @@
                 </div>
             </section>
 
-            <div class="w-full bg-primary py-4">
+            <div class="w-full bg-primary-200 py-4">
                 <div class="max-w-6xl mx-auto px-8">
                     <h2 class="text-white font-bold text-2xl md:text-3xl tracking-wide">Nature Views</h2>
                 </div>
@@ -112,7 +105,7 @@
                 </div>
             </section>
 
-            <div class="w-full bg-primary py-4">
+            <div class="w-full bg-primary-200 py-4">
                 <div class="max-w-6xl mx-auto px-8">
                     <h2 class="text-white font-bold text-2xl md:text-3xl tracking-wide">Shopping Spots</h2>
                 </div>
@@ -124,4 +117,6 @@
             </section>
         </main>
     </body>
-    </html>
+
+    @include('layouts.footer')
+@endsection

@@ -76,7 +76,7 @@
             <h12 class="text-[16px] font-extralight mx-[79px]">Kolom bertanda bintang (<span class="text-red-500">*</span>) wajib diisi</h12>
             <div class="flex items-center justify-between mx-[79px] gap-[820px] mt-[48px] font-bold text-[16px]">
                 <button class="w-1/2 ">
-                    <a href="" class="text-white bg-second-50 rounded-[15px] w-full h-[37.35px] flex items-center justify-center shadow-[0px_3px_3px_rgba(0,0,0,0.25)]">Batal</a>
+                    <a href="{{ route('tagihan') }}"" class="text-white bg-second-50 rounded-[15px] w-full h-[37.35px] flex items-center justify-center shadow-[0px_3px_3px_rgba(0,0,0,0.25)]">Batal</a>
                 </button>
                  <button class="w-1/2">
                     <a href="" class="text-white bg-second-50 rounded-[15px] w-full h-[37.35px] flex items-center justify-center shadow-[0px_3px_3px_rgba(0,0,0,0.25)]">Kirim</a>

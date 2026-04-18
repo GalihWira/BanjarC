@@ -50,7 +50,7 @@
                 </div>
                 <a href="#" class ="my-2.5">Beranda</a>    
             </div>
-            <div class ="flex items-center w-[250px] h-fit pl-6 bg-primary-300 drop-shadow-[0px_4px_4px_rgba(0,0,0,0.50)] font-sora text-white text-[18px] font-semibold ">
+            <div class ="bar-wisata flex items-center w-[250px] h-fit pl-6 bg-primary-300 drop-shadow-[0px_4px_4px_rgba(0,0,0,0.50)] font-sora text-white text-[18px] font-semibold ">
                 <div class="w-fit h-fit flex items-center justify-center mr-[11.11px]">
                     <svg width="37" height="25" viewBox="0 0 37 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M21.5967 18.549H23.7561V20.6763H21.5967V18.549ZM29.0613 18.549H31.2207V20.6763H29.0613V18.549ZM27.2499 11.0043V8.87805H24.257V9.91372L25.3734 11.0053L27.2499 11.0043Z" fill="white"/>

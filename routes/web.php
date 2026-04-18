@@ -14,26 +14,42 @@ Route::get ('/validasi/pengaduan', [ValidasiController::class, 'pengaduan']);
 Route::get ('/validasi/pengajuan', [ValidasiController::class, 'pengajuan']);
 Route::get ('/validasi/pembayaran', [ValidasiController::class, 'pembayaran']);
 
+Route::get('/PlaceToGo', function () {
+    return view('PlaceToGo');
+})->name('placetogo');
+Route::get('/tagihan', function () {
+    return view('daftarTagihan');
+})->name('tagihan');
+Route::get('/awalPP', function () {
+    return view('lamanAwalPP');
+})->name('awalpp');
+Route::get('/pengumuman', function () {
+    return view('pengumuman');
+})->name('info');
+Route::get('/#', function () {
+    return view('home');
+})->name('hom');
+Route::get('/localProduct', function () {
+    return view('localProduct');
+})->name('lokalproduk');
+Route::get('/login', function () {
+    return view('login');
+})->name('login');
 Route::get ('/bayarpeturunan', function () {
-    return view ('bayarpeturunan
-    ');
-});
+    return view ('bayarpeturunan');
+})->name('bayarpet');
 Route::get ('/bayarair', function () {
-    return view ('bayarAir
-    ');
-});
+    return view ('bayarAir');
+})->name('bayarair');
 Route::get ('/bayarsuka', function () {
-    return view ('bayarSuka
-    ');
-});
+    return view ('bayarSuka');
+})->name('bayarsuk');
 Route::get ('/pengumuman', function () {
-    return view ('pengumuman
-    ');
+    return view ('pengumuman');
 });
 Route::get ('/pengaduan', function () {
-    return view ('pengaduan
-    ');
-});
+    return view ('pengaduan');
+})->name('pengad');
 Route::get ('/tagihanAdmin', function () {
     return view ('tagihanAdmn
     ');
@@ -43,9 +59,8 @@ Route::get ('/datapengaduan', function () {
     ');
 });
 Route::get ('/lamanpengajuan', function () {
-    return view ('lamanPengajuan
-    ');
-});
+    return view ('lamanPengajuan');
+})->name('pengajuan');
 
 Route::get('/peminjaman', [PeminjamanController::class, 'index'])->name('peminjaman.index');
 Route::get('/kontrol-peminjaman', [PeminjamanController::class, 'kontrol'])->name('peminjaman.kontrol');

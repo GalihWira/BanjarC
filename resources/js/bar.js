@@ -17,3 +17,4 @@ document.querySelector('.edit-bar').addEventListener('click', () => {
 document.querySelector('.valid-bar').addEventListener('click', () => {
   document.querySelector('.valid-side').classList.toggle('hidden')
 })
+
